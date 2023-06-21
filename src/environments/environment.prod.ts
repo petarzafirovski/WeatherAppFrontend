@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  apiUrl : "https://localhost:7201/api",
+  authEndpoint : "Authentication",
+  weatherEndpoint : "Weather"
 };

@@ -1,0 +1,52 @@
+<div class="container">
+    <h2>Get Weather Data</h2>
+    <form (ngSubmit)="fetchDataFromApi(weatherDataHolder)">
+      <div class="mb-3">
+        <label for="cityName" class="form-label">City Name</label>
+        <input type="text" class="form-control" id="cityName" [(ngModel)]="weatherDataHolder.cityName" name="cityName" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Forecast type</label>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dataType" id="current" value="current" [(ngModel)]="weatherDataHolder.forecastType">
+          <label class="form-check-label" for="current">
+            Current
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dataType" id="onehour" value="onehour" [(ngModel)]="weatherDataHolder.forecastType">
+          <label class="form-check-label" for="onehour">
+            One Hour
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dataType" id="twoday" value="twoday" [(ngModel)]="weatherDataHolder.forecastType">
+          <label class="form-check-label" for="twoday">
+            Two Days
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="dataType" id="sevenday" value="sevenday" [(ngModel)]="weatherDataHolder.forecastType">
+          <label class="form-check-label" for="sevenday">
+            Seven Days
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Fetch Data</button>
+    </form>
+    <div class="mt-2">
+        <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+    </div>
+  
+    <!-- <div class="mt-3" *ngIf="isLoggedIn">
+      <h3>Data</h3>
+      <ul>
+        <li *ngFor="let item of fetchedData">{{ item.name }}</li>
+      </ul>
+    </div>
+  </div> -->
+<!--   
+  <div class="container" *ngIf="!isLoggedIn">
+    <p>Please log in to access the weather data.</p>
+  </div> -->
+  
