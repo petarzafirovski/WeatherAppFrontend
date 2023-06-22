@@ -10,6 +10,7 @@ import { AuthInterceptor } from './service/auth.interceptor';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { WeatherdataComponent } from './components/weatherdata/weatherdata.component';
+import { LandingPageComponent } from './components/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { WeatherdataComponent } from './components/weatherdata/weatherdata.compo
     RegisterComponent,
     NavbarComponent,
     WeatherdataComponent,
+    LandingPageComponent,
   ],
   imports: [BrowserModule, HttpClientModule, FormsModule, AppRoutingModule],
   providers: [

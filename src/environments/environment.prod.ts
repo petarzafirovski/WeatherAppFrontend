@@ -1,5 +1,5 @@
 export const environment = {
-  apiUrl : "https://localhost:7201/api",
+  apiUrl : "http://localhost:80/api",
   authEndpoint : "Authentication",
   weatherEndpoint : "Weather"
 };

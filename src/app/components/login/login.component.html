@@ -1,14 +1,19 @@
-<div class="container">
-    <h2>Login</h2>
-    <form (ngSubmit)="login(loginModel)">
-      <div class="mb-3">
-        <label for="loginEmail" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="loginEmail" [(ngModel)]="loginModel.email" name="loginEmail" required>
-      </div>
-      <div class="mb-3">
-        <label for="loginPassword" class="form-label">Password</label>
-        <input type="password" class="form-control" id="loginPassword" [(ngModel)]="loginModel.password" name="loginPassword" required>
-      </div>
-      <button type="submit" class="btn btn-primary">Login</button>
-    </form>
+<div class="container d-flex justify-content-center align-items-center" style="height: 70vh;">
+  <div class="card shadow p-4" style="width: 400px;">
+    <div class="card-body">
+      <h2 class="card-title text-center">Login</h2>
+      <form (ngSubmit)="login(loginModel)">
+        <div class="mb-3">
+          <label for="loginEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="loginEmail" [(ngModel)]="loginModel.email" name="loginEmail" required>
+        </div>
+        <div class="mb-3">
+          <label for="loginPassword" class="form-label">Password</label>
+          <input type="password" class="form-control" id="loginPassword" [(ngModel)]="loginModel.password" name="loginPassword" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
   </div>
+</div>
+
