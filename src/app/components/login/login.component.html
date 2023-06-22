@@ -5,11 +5,11 @@
       <form (ngSubmit)="login(loginModel)">
         <div class="mb-3">
           <label for="loginEmail" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="loginEmail" [(ngModel)]="loginModel.email" name="loginEmail" required>
+          <input type="email" class="form-control" id="loginEmail" [(ngModel)]="loginModel.email" name="loginEmail" required placeholder="Enter your email">
         </div>
         <div class="mb-3">
           <label for="loginPassword" class="form-label">Password</label>
-          <input type="password" class="form-control" id="loginPassword" [(ngModel)]="loginModel.password" name="loginPassword" required>
+          <input type="password" class="form-control" id="loginPassword" [(ngModel)]="loginModel.password" name="loginPassword" required placeholder="Enter your password">
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
       </form>
