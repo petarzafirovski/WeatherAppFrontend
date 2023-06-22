@@ -14,7 +14,7 @@ export class AuthService {
   loginUrlPath: string = `${environment.apiUrl}/${environment.authEndpoint}/login`;
   tokenKey : string = "authToken";
   private isLoggedInSubject = new BehaviorSubject<boolean>(false);
-  isLoggedIn$ = this.isLoggedInSubject.asObservable();
+  isLoggedIn = this.isLoggedInSubject.asObservable();
 
   constructor(private httpClient: HttpClient) {}
 
