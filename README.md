@@ -1,4 +1,6 @@
-# WeatherAppFrontend
+<h1 style="color:blue">Please first start the backend part (both docker containers) in order for the frontend part to successfully start!</h1>
+<h3>Frontend part for Weather App</h2>
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.11.
 
